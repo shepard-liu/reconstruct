@@ -1,10 +1,15 @@
 {
-    "tasks": [
-        {
-            "label": "build",
-            "type": "shell",
-            "command": "mkdir -p debug && cd debug && cmake -DCMAKE_BUILD_TYPE=Debug .. && make",
-        }
-    ],
-    "version": "2.0.0"
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "cmake -G 'Visual Studio 17 2022' -Wno-dev -Bbuild . && cmake --build ./build --config Debug"
+    },
+    {
+      "label": "rebuild",
+      "type": "shell",
+      "command": "cmake -G 'Visual Studio 17 2022' -Wno-dev -Bbuild . --fresh && cmake --build ./build --config Debug"
+    }
+  ],
+  "version": "2.0.0"
 }

@@ -1,0 +1,414 @@
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.19045.
+-- Checking for module 'eigen3'
+--   Package 'eigen3', required by 'virtual:world', not found
+-- Eigen found (include: C:/Program Files/PCL 1.13.1/3rdParty/Eigen/eigen3, version: 3.4.0)
+-- OpenNI2 found (version: 2.2.0.33, include: C:/Program Files/OpenNI2/Include, lib: C:/Program Files/OpenNI2/Lib/OpenNI2.lib)
+-- Checking for module 'eigen3'
+--   Package 'eigen3', required by 'virtual:world', not found
+-- Eigen found (include: C:/Program Files/PCL 1.13.1/3rdParty/Eigen/eigen3, version: 3.4.0)
+-- Checking for module 'flann'
+--   Package 'flann', required by 'virtual:world', not found
+-- FLANN found (include: C:/Program Files/PCL 1.13.1/3rdParty/FLANN/include, lib: C:/Program Files/PCL 1.13.1/3rdParty/FLANN/lib/flann_cpp_s.lib)
+-- Could NOT find Qhull (missing: QHULL_INCLUDE_DIR) 
+-- OpenNI2 found (version: 2.2.0.33, include: C:/Program Files/OpenNI2/Include, lib: C:/Program Files/OpenNI2/Lib/OpenNI2.lib)
+-- PCL_LIBRARIES: pcl_common;pcl_octree;pcl_io;pcl_kdtree;pcl_search;pcl_surface;pcl_visualization;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization;C:/Program Files/OpenNI2/Lib/OpenNI2.lib;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;FLANN::FLANN
+-- PCL_LIBRARY_DIRS: C:/Program Files/PCL 1.13.1/lib
+-- PCL_IO_LINK_LIBRARIES: C:/Program Files/OpenNI2/Lib/OpenNI2.lib;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization;pcl_common;pcl_octree
+-- PCL_INCLUDE_DIRS: C:/Program Files/PCL 1.13.1/include/pcl-1.13;C:/Program Files/PCL 1.13.1/3rdParty/Eigen/eigen3;C:/Program Files/PCL 1.13.1/3rdParty/Boost/include/boost-1_82;C:/Program Files/OpenNI2/Include
+-- VTK_LIBRARIES: 
+-- PCL dependency target: pcl_common
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: pcl_octree
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: pcl_io
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: pcl_kdtree
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: pcl_search
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: pcl_surface
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: pcl_visualization
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: Boost::system
+-- imported_type: STATIC_LIBRARY
+-- PCL dependency target: Boost::filesystem
+-- imported_type: STATIC_LIBRARY
+-- PCL dependency target: Boost::iostreams
+-- imported_type: STATIC_LIBRARY
+-- PCL dependency target: Boost::serialization
+-- imported_type: STATIC_LIBRARY
+-- PCL dependency target: C:/Program Files/OpenNI2/Lib/OpenNI2.lib
+-- imported_type: STATIC_LIBRARY
+-- PCL dependency target: VTK::ChartsCore
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::CommonColor
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::CommonComputationalGeometry
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::CommonCore
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::CommonDataModel
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::CommonExecutionModel
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::CommonMath
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::CommonMisc
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::CommonTransforms
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::FiltersCore
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::FiltersExtraction
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::FiltersGeneral
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::FiltersGeometry
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::FiltersModeling
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::FiltersSources
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::ImagingCore
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::ImagingSources
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::InteractionImage
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::InteractionStyle
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::InteractionWidgets
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::IOCore
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::IOGeometry
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::IOImage
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::IOLegacy
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::IOPLY
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::RenderingAnnotation
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::RenderingCore
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::RenderingContext2D
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::RenderingLOD
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::RenderingFreeType
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::ViewsCore
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::ViewsContext2D
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::RenderingOpenGL2
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: VTK::RenderingContextOpenGL2
+-- imported_type: SHARED_LIBRARY
+-- PCL dependency target: FLANN::FLANN
+-- imported_type: STATIC_LIBRARY
+-- Configuring incomplete, errors occurred!
+-- Cache values
+// The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/Boost-1.82.0
+
+// 
+Boost_FILESYSTEM_LIBRARY_DEBUG:STRING=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/libboost_filesystem-vc143-mt-gd-x64-1_82.lib
+
+// 
+Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/libboost_filesystem-vc143-mt-x64-1_82.lib
+
+// Path to a file.
+Boost_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/include/boost-1_82
+
+// 
+Boost_IOSTREAMS_LIBRARY_DEBUG:STRING=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/libboost_iostreams-vc143-mt-gd-x64-1_82.lib
+
+// 
+Boost_IOSTREAMS_LIBRARY_RELEASE:STRING=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/libboost_iostreams-vc143-mt-x64-1_82.lib
+
+// 
+Boost_SERIALIZATION_LIBRARY_DEBUG:STRING=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/libboost_serialization-vc143-mt-gd-x64-1_82.lib
+
+// 
+Boost_SERIALIZATION_LIBRARY_RELEASE:STRING=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/libboost_serialization-vc143-mt-x64-1_82.lib
+
+// 
+Boost_SYSTEM_LIBRARY_DEBUG:STRING=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/libboost_system-vc143-mt-gd-x64-1_82.lib
+
+// 
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/libboost_system-vc143-mt-x64-1_82.lib
+
+// Path to a program.
+CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe
+
+// Semicolon separated list of supported configuration types, only supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything else will be ignored.
+CMAKE_CONFIGURATION_TYPES:STRING=Debug;Release;MinSizeRel;RelWithDebInfo
+
+// Flags used by the CXX compiler during all build types.
+CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3 /GR /EHsc
+
+// Flags used by the CXX compiler during DEBUG builds.
+CMAKE_CXX_FLAGS_DEBUG:STRING=/MDd /Zi /Ob0 /Od /RTC1
+
+// Flags used by the CXX compiler during MINSIZEREL builds.
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/MD /O1 /Ob1 /DNDEBUG
+
+// Flags used by the CXX compiler during RELEASE builds.
+CMAKE_CXX_FLAGS_RELEASE:STRING=/MD /O2 /Ob2 /DNDEBUG
+
+// Flags used by the CXX compiler during RELWITHDEBINFO builds.
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/MD /Zi /O2 /Ob1 /DNDEBUG
+
+// Libraries linked by default with all C++ applications.
+CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+
+// Flags used by the linker during all build types.
+CMAKE_EXE_LINKER_FLAGS:STRING=/machine:x64
+
+// Flags used by the linker during DEBUG builds.
+CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
+
+// Flags used by the linker during MINSIZEREL builds.
+CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO
+
+// Flags used by the linker during RELEASE builds.
+CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
+
+// Flags used by the linker during RELWITHDEBINFO builds.
+CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
+
+// Install path prefix, prepended onto install directories.
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/reconstruct
+
+// Path to a program.
+CMAKE_LINKER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe
+
+// Flags used by the linker during the creation of modules during all build types.
+CMAKE_MODULE_LINKER_FLAGS:STRING=/machine:x64
+
+// Flags used by the linker during the creation of modules during DEBUG builds.
+CMAKE_MODULE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
+
+// Flags used by the linker during the creation of modules during MINSIZEREL builds.
+CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO
+
+// Flags used by the linker during the creation of modules during RELEASE builds.
+CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
+
+// Flags used by the linker during the creation of modules during RELWITHDEBINFO builds.
+CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
+
+// Path to a program.
+CMAKE_MT:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/mt.exe
+
+// RC compiler
+CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/rc.exe
+
+// Flags for Windows Resource Compiler during all build types.
+CMAKE_RC_FLAGS:STRING=-DWIN32
+
+// Flags for Windows Resource Compiler during DEBUG builds.
+CMAKE_RC_FLAGS_DEBUG:STRING=-D_DEBUG
+
+// Flags for Windows Resource Compiler during MINSIZEREL builds.
+CMAKE_RC_FLAGS_MINSIZEREL:STRING=
+
+// Flags for Windows Resource Compiler during RELEASE builds.
+CMAKE_RC_FLAGS_RELEASE:STRING=
+
+// Flags for Windows Resource Compiler during RELWITHDEBINFO builds.
+CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
+
+// Flags used by the linker during the creation of shared libraries during all build types.
+CMAKE_SHARED_LINKER_FLAGS:STRING=/machine:x64
+
+// Flags used by the linker during the creation of shared libraries during DEBUG builds.
+CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
+
+// Flags used by the linker during the creation of shared libraries during MINSIZEREL builds.
+CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO
+
+// Flags used by the linker during the creation of shared libraries during RELEASE builds.
+CMAKE_SHARED_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
+
+// Flags used by the linker during the creation of shared libraries during RELWITHDEBINFO builds.
+CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
+
+// If set, runtime paths are not added when installing shared libraries, but are added when building.
+CMAKE_SKIP_INSTALL_RPATH:BOOL=NO
+
+// If set, runtime paths are not added when using shared libraries.
+CMAKE_SKIP_RPATH:BOOL=NO
+
+// Flags used by the linker during the creation of static libraries during all build types.
+CMAKE_STATIC_LINKER_FLAGS:STRING=/machine:x64
+
+// Flags used by the linker during the creation of static libraries during DEBUG builds.
+CMAKE_STATIC_LINKER_FLAGS_DEBUG:STRING=
+
+// Flags used by the linker during the creation of static libraries during MINSIZEREL builds.
+CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL:STRING=
+
+// Flags used by the linker during the creation of static libraries during RELEASE builds.
+CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
+
+// Flags used by the linker during the creation of static libraries during RELWITHDEBINFO builds.
+CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
+
+// If this value is on, makefiles will be generated without the .SILENT directive, and all commands will be echoed to the console during the make.  This is useful for debugging only. With Visual Studio IDE projects all commands are done without /nologo.
+CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+// Path to a file.
+EIGEN_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Eigen/eigen3
+
+// Path to a file.
+FLANN_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/FLANN/include
+
+// Path to a library.
+FLANN_LIBRARY_DEBUG_SHARED:FILEPATH=C:/Program Files/PCL 1.13.1/3rdParty/FLANN/lib/flann_cpp-gd.lib
+
+// Path to a library.
+FLANN_LIBRARY_DEBUG_STATIC:FILEPATH=C:/Program Files/PCL 1.13.1/3rdParty/FLANN/lib/flann_cpp_s-gd.lib
+
+// Path to a library.
+FLANN_LIBRARY_SHARED:FILEPATH=C:/Program Files/PCL 1.13.1/3rdParty/FLANN/lib/flann_cpp.lib
+
+// Path to a library.
+FLANN_LIBRARY_STATIC:FILEPATH=C:/Program Files/PCL 1.13.1/3rdParty/FLANN/lib/flann_cpp_s.lib
+
+// OpenGL library for win32
+OPENGL_gl_LIBRARY:STRING=opengl32
+
+// GLU library for win32
+OPENGL_glu_LIBRARY:STRING=glu32
+
+// Path to a file.
+OPENNI2_INCLUDE_DIR:PATH=C:/Program Files/OpenNI2/Include
+
+// Path to a library.
+OPENNI2_LIBRARY:FILEPATH=C:/Program Files/OpenNI2/Lib/OpenNI2.lib
+
+// path to common headers
+PCL_COMMON_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/include/pcl-1.13
+
+// path to pcl_common library
+PCL_COMMON_LIBRARY:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_common.lib
+
+// path to pcl_common library debug
+PCL_COMMON_LIBRARY_DEBUG:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_commond.lib
+
+// The directory containing a CMake configuration file for PCL.
+PCL_DIR:PATH=C:/Program Files/PCL 1.13.1/cmake
+
+// path to geometry headers
+PCL_GEOMETRY_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/include/pcl-1.13
+
+// path to io headers
+PCL_IO_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/include/pcl-1.13
+
+// path to pcl_io library
+PCL_IO_LIBRARY:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_io.lib
+
+// path to pcl_io library debug
+PCL_IO_LIBRARY_DEBUG:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_iod.lib
+
+// path to kdtree headers
+PCL_KDTREE_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/include/pcl-1.13
+
+// path to pcl_kdtree library
+PCL_KDTREE_LIBRARY:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_kdtree.lib
+
+// path to pcl_kdtree library debug
+PCL_KDTREE_LIBRARY_DEBUG:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_kdtreed.lib
+
+// path to octree headers
+PCL_OCTREE_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/include/pcl-1.13
+
+// path to pcl_octree library
+PCL_OCTREE_LIBRARY:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_octree.lib
+
+// path to pcl_octree library debug
+PCL_OCTREE_LIBRARY_DEBUG:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_octreed.lib
+
+// path to search headers
+PCL_SEARCH_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/include/pcl-1.13
+
+// path to pcl_search library
+PCL_SEARCH_LIBRARY:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_search.lib
+
+// path to pcl_search library debug
+PCL_SEARCH_LIBRARY_DEBUG:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_searchd.lib
+
+// path to surface headers
+PCL_SURFACE_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/include/pcl-1.13
+
+// path to pcl_surface library
+PCL_SURFACE_LIBRARY:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_surface.lib
+
+// path to pcl_surface library debug
+PCL_SURFACE_LIBRARY_DEBUG:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_surfaced.lib
+
+// path to visualization headers
+PCL_VISUALIZATION_INCLUDE_DIR:PATH=C:/Program Files/PCL 1.13.1/include/pcl-1.13
+
+// path to pcl_visualization library
+PCL_VISUALIZATION_LIBRARY:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_visualization.lib
+
+// path to pcl_visualization library debug
+PCL_VISUALIZATION_LIBRARY_DEBUG:FILEPATH=C:/Program Files/PCL 1.13.1/lib/pcl_visualizationd.lib
+
+// Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+// pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=C:/msys64/mingw64/bin/pkg-config.exe
+
+// Path to a library.
+QHULL_LIBRARY_DEBUG:FILEPATH=C:/Program Files/PCL 1.13.1/3rdParty/Qhull/lib/qhull_rd.lib
+
+// Path to a library.
+QHULL_LIBRARY_DEBUG_STATIC:FILEPATH=C:/Program Files/PCL 1.13.1/3rdParty/Qhull/lib/qhullstatic_rd.lib
+
+// Path to a library.
+QHULL_LIBRARY_SHARED:FILEPATH=C:/Program Files/PCL 1.13.1/3rdParty/Qhull/lib/qhull_r.lib
+
+// Path to a library.
+QHULL_LIBRARY_STATIC:FILEPATH=C:/Program Files/PCL 1.13.1/3rdParty/Qhull/lib/qhullstatic_r.lib
+
+// The directory containing a CMake configuration file for Qhull.
+Qhull_DIR:PATH=Qhull_DIR-NOTFOUND
+
+// The directory containing VTKConfig.cmake
+VTK_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/VTK/lib/cmake/vtk-9.2
+
+// The directory containing a CMake configuration file for boost_atomic.
+boost_atomic_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/boost_atomic-1.82.0
+
+// The directory containing a CMake configuration file for boost_bzip2.
+boost_bzip2_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/boost_bzip2-1.82.0
+
+// The directory containing a CMake configuration file for boost_filesystem.
+boost_filesystem_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/boost_filesystem-1.82.0
+
+// The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/boost_headers-1.82.0
+
+// The directory containing a CMake configuration file for boost_iostreams.
+boost_iostreams_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/boost_iostreams-1.82.0
+
+// The directory containing a CMake configuration file for boost_serialization.
+boost_serialization_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/boost_serialization-1.82.0
+
+// The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/boost_system-1.82.0
+
+// The directory containing a CMake configuration file for boost_zlib.
+boost_zlib_DIR:PATH=C:/Program Files/PCL 1.13.1/3rdParty/Boost/lib/cmake/boost_zlib-1.82.0
+
+// The directory containing a CMake configuration file for flann.
+flann_DIR:PATH=flann_DIR-NOTFOUND
+

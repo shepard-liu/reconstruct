@@ -3,8 +3,7 @@
 #include <pcl/io/ply_io.h>
 #include <pcl/point_types.h>
 #include <pcl/surface/concave_hull.h>
-
-#include <Eigen/Core>
+#include <pcl/visualization/pcl_visualizer.h>
 
 using namespace std;
 int main(int argc, char** argv) {
@@ -27,12 +26,13 @@ int main(int argc, char** argv) {
 
     pcl::PCDWriter writer;
     writer.write("hull.pcd", *surface_hull, false);
-    // 可视化
-    // pcl::visualization::PCLVisualizer::Ptr viewer(
-    //     new pcl::visualization::PCLVisualizer("hull"));
-    // viewer->setWindowName("alshape曲面重构");
-    // viewer->addPolygonMesh<pcl::PointXYZ>(surface_hull, polygons,
-    // "polyline"); viewer->spin();
 
-    return (0);
+    // 可视化
+    pcl::visualization::PCLVisualizer::Ptr viewer(
+        new pcl::visualization::PCLVisualizer("hull"));
+    viewer->setWindowName("alshape曲面重构");
+    viewer->addPolygonMesh<pcl::PointXYZ>(surface_hull, polygons, "polyline");
+    viewer->spin();
+
+    return 0;
 }
