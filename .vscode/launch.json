@@ -1,15 +1,20 @@
 {
   "configurations": [
     {
-      "name": "(Windows) 启动",
-      "type": "cppvsdbg",
+      "name": "Launch main",
+      "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/Debug/main.exe",
-      "args": [],
+      "program": "${workspaceRoot}/build/main",
+      "windows": {
+        "args": []
+      },
+      "osx": {
+        "args": [],
+        "MIMode": "lldb"
+      },
       "stopAtEntry": false,
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceRoot}",
       "environment": [],
-      "console": "externalTerminal",
       "preLaunchTask": "build"
     }
   ]

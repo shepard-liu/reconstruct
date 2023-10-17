@@ -5,7 +5,7 @@ project(reconstruct LANGUAGES CXX)
 # -------------------------
 # Configure PCL
 # -------------------------
-if(NOT DEFINED ENV{PCL_ROOT})
+if(WIN32 AND NOT DEFINED ENV{PCL_ROOT})
     message(FATAL_ERROR "Pass -DPCL_ROOT or configure PCL_ROOT environment variable to point to the PCL installation directory. This is automatically set if you install by PCL all-in-one installer.")
 endif()
 
@@ -33,9 +33,10 @@ target_include_directories(main PRIVATE
     ${PCL_INCLUDE_DIRS}
     ${PCL_ROOT}/3rdParty/FLANN/include/)
 
-target_link_libraries(main PRIVATE ${PCL_LIBRARIES}) 
+target_link_libraries(main PRIVATE ${PCL_LIBRARIES})
 
 set_target_properties(main PROPERTIES
+    OUTPUT_NAME main
     CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON
     CXX_EXTENSIONS OFF)
@@ -44,6 +45,7 @@ set_target_properties(main PROPERTIES
 if(WIN32)
     foreach(_dep_target IN LISTS PCL_LIBRARIES)
         message(STATUS "PCL dependency target: ${_dep_target}")
+
         if(${_dep_target} MATCHES "^pcl_.*$")
             list(APPEND TARGET_MAIN_RUNTIME_DLLS "${PCL_ROOT}/bin/$<TARGET_FILE_BASE_NAME:${_dep_target}>$<IF:$<CONFIG:Debug>,d, >.dll")
         elseif(${_dep_target} MATCHES "^(VTK|vtk).*$")
@@ -53,9 +55,9 @@ if(WIN32)
         elseif(${_dep_target} MATCHES "^(QHULL|[qQ]hull).*$")
             list(APPEND TARGET_MAIN_RUNTIME_DLLS "${PCL_ROOT}/3rdParty/Qhull/bin/$<TARGET_FILE_BASE_NAME:${_dep_target}>$<IF:$<CONFIG:Debug>,d, >.dll")
         elseif(${_dep_target} MATCHES "^(BOOST|[bB]oost).*$")
-            # do nothing bcz boost is linked statically by PCL
+        # do nothing bcz boost is linked statically by PCL
         elseif(${_dep_target} MATCHES "(OPENNI2|[oO]pen(ni|NI)2)")
-            # do nothing bcz OPENNI2 is linked statically by PCL
+        # do nothing bcz OPENNI2 is linked statically by PCL
         else()
             message(FATAL_ERROR "Unknown dependency target of PCL: ${_dep_target}")
         endif()
@@ -64,9 +66,9 @@ if(WIN32)
         message(STATUS "imported_type: ${imported_type}")
 
         # add_custom_command(TARGET main POST_BUIL  D
-        #     COMMAND ${CMAKE_COMMAND} -E echo "$<TARGET_FILE_BASE_NAME:${_dep_target}>$<IF:$<CONFIG:Debug>,d, >")
+        # COMMAND ${CMAKE_COMMAND} -E echo "$<TARGET_FILE_BASE_NAME:${_dep_target}>$<IF:$<CONFIG:Debug>,d, >")
     endforeach()
-    
+
     add_custom_command(TARGET main POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
         ${TARGET_MAIN_RUNTIME_DLLS}

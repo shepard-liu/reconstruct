@@ -9,23 +9,23 @@ using namespace std;
 int main(int argc, char** argv) {
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(
         new pcl::PointCloud<pcl::PointXYZ>);
-    pcl::io::loadPCDFile<pcl::PointXYZ>("../data/bunny.pcd", *cloud);
+    pcl::io::loadPCDFile<pcl::PointXYZ>("data/my_desk.pcd", *cloud);
     pcl::PointCloud<pcl::PointXYZ>::Ptr surface_hull(
         new pcl::PointCloud<pcl::PointXYZ>);
     pcl::ConcaveHull<pcl::PointXYZ> cavehull;
     cavehull.setInputCloud(cloud);
-    cavehull.setAlpha(0.003);
+    cavehull.setAlpha(0.03);
     vector<pcl::Vertices> polygons;
     cavehull.reconstruct(*surface_hull, polygons);  // 重建面要素到点云
 
     pcl::PolygonMesh mesh;
     cavehull.reconstruct(mesh);  // 重建面要素到mesh
-    pcl::io::saveOBJFile("object_mesh.obj", mesh);
+    pcl::io::saveOBJFile("data/object_mesh.obj", mesh);
     cerr << "Concave hull has: " << surface_hull->points.size()
          << " data points." << endl;
 
     pcl::PCDWriter writer;
-    writer.write("hull.pcd", *surface_hull, false);
+    writer.write("data/hull.pcd", *surface_hull, false);
 
     // 可视化
     pcl::visualization::PCLVisualizer::Ptr viewer(
