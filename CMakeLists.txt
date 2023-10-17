@@ -41,6 +41,8 @@ set_target_properties(main PROPERTIES
     CXX_STANDARD_REQUIRED ON
     CXX_EXTENSIONS OFF)
 
+include(cmake/utils/print_all_props.cmake)
+
 # copy dlls for linking on Windows
 if(WIN32)
     foreach(_dep_target IN LISTS PCL_LIBRARIES)
@@ -61,19 +63,10 @@ if(WIN32)
         else()
             message(FATAL_ERROR "Unknown dependency target of PCL: ${_dep_target}")
         endif()
-
-        get_target_property(imported_type ${_dep_target} TYPE)
-        message(STATUS "imported_type: ${imported_type}")
-
-        # add_custom_command(TARGET main POST_BUIL  D
-        # COMMAND ${CMAKE_COMMAND} -E echo "$<TARGET_FILE_BASE_NAME:${_dep_target}>$<IF:$<CONFIG:Debug>,d, >")
     endforeach()
 
     add_custom_command(TARGET main POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
         ${TARGET_MAIN_RUNTIME_DLLS}
         $<TARGET_FILE_DIR:main>)
-
-    add_custom_command(TARGET main POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E echo ${TARGET_MAIN_RUNTIME_DLLS})
 endif()
